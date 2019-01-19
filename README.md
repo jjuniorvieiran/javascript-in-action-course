@@ -1,0 +1,2 @@
+# javascript-in-action-course The course design will build a stock exchange trading register. We will register new negotiations, they will be imported from specialized services, all applying the functional and object-oriented paradigm at the same time, using the best of both worlds. 
+# javascript-in-action-course The course design will build a stock exchange trading register. We will register new negotiations, they will be imported from specialized services, all applying the functional and object-oriented paradigm at the same time, using the best of both worlds. 
