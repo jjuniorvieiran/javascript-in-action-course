@@ -4,17 +4,22 @@ class NegociacaoController {
 
         let $ = document.querySelector.bind(document);
 
-        this.inputData = $('#data');
-        this.inputQuantidade =  $('#quantidade');
-        this.inputValor = $('#valor');
+        this._inputData = $('#data');
+        this._inputQuantidade =  $('#quantidade');
+        this._inputValor = $('#valor');
     } 
 
-    adiciona(event) {
-        event.preventDefault();
+  adiciona(event) {
 
-        console.log(this.inputData.value);
-        console.log(this.inputQuantidade.value);
-        console.log(this.inputValor.value);
+    event.preventDefault();
 
-  }
+    let data = new Date(...//spread operator
+        this._inputData.value
+        .split('-')
+        .map(function(item, indice) { // map function
+            return item - indice % 2; // 1 mod 2 = 1 ai subtrai um numero
+        })
+    );
+    console.log(data);
+}
 }
