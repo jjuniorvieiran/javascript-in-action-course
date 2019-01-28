@@ -13,13 +13,18 @@ class NegociacaoController {
 
     event.preventDefault();
 
-    let data = new Date(...//spread operator
+    let data = new Date(...
         this._inputData.value
         .split('-')
-        .map(function(item, indice) { // map function
-            return item - indice % 2; // 1 mod 2 = 1 ai subtrai um numero
-        })
+        .map((item, indice) => item - indice % 2)
     );
-    console.log(data);
-}
+    
+    let negociacao = new Negociacao(
+        data,
+        this._inputQuantidade.value,
+        this._inputValor.value
+      );
+    
+      console.log(negociacao);
+    }
 }
